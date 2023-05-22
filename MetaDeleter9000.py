@@ -12,7 +12,7 @@ def delete_metadata_file():
         # Opens a dialog to select the files.
         root = tk.Tk()
         root.withdraw()
-        file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png *.jpg *.jpeg *.gif")])
+        file_path = filedialog.askopenfilename(filetypes=[("Image files", "*.png *.jpg *.jpeg *.gif *.PNG *.JPG *.JPEG *.GIF")])
         
         if file_path:
             delete_metadata(file_path)
